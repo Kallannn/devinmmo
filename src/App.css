@@ -1,38 +1,286 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@1,100&display=swap');
+
+:root {
+  --first:rgb(172, 172, 172);
+  --second: rgb(255, 255, 255);
+  --third: ;
+  --contrast: rgb(0, 0, 0);
+  --titles:rgb(0, 0, 0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.gameCardimg{
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.DevInMMO{
+  font-family: 'Press Start 2P', cursive;
+  color: var(--titles);
+  font-size: 28px;
+  margin: 7px 20px 5px 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.DevInMMO:hover{
+  cursor:pointer;
+}
+
+.gameCard{
+  display: inline-flex;
   flex-direction: column;
+  margin: 2px;
+  width:33%;
+}
+
+.gameCard:hover{
+  outline: 3px var(--contrast) solid;
+}
+
+.searchBar{
+  border-color: var(--first);
+  background-color: var(--first);
+  color: var(--first);
+  width: 150px;
+  height: 100%;
+}
+
+.icon{
+  height: 15px;
+}
+
+.searchBarAndPaging{
+  margin: 10px;
+  background-color: var(--first);
+}
+
+.lineBelowDiv{
+  bottom:0;
+  background-color: var(--contrast);
+  height: 2px;
+  width:100%;
+}
+.sectionMinHeight{
+  height: 90%;
+}
+
+label{
+  color: var(--contrast);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+p{
+  color: var(--contrast);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.noDownMargin{
+  margin-bottom: 0px;
+}
+
+.newsCardPlaceHolder{
+  display: inline-flex;
+  flex-direction: row;
+  padding: 5px;
+  outline: 1px black solid;
+  margin: 10px;
+  width:85%;
+}
+
+.commentSection_AddComment{
+  padding: 5px;
+  outline: 1px black solid;
+  margin: 10px;
+  width:70%;
+}
+.commentCollection{
+  padding: 5px;
+  margin: 10px;
+}
+
+.commentVoteCounter{
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.commentSection_CommentDisplay{
+  padding: 5px;
+  outline: 1px black solid;
+  margin: 10px;
+  width:70%;
+}
+
+.gameLib{
+  width:80%;
+  justify-items: center;
+  justify-content: center;
+}
+
+.NextBackButtonAligner{
+  width: 100%;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.screenshotFrame{
+  width: 500px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.screenshotFrame img{
+  width: 100%;
+}
+.screenshotButton{
+  width: 50%;
+  margin: 0px 0px 10px 0px;
+}
+.minSysReq{
+  background-color: var(--first);
+  outline: solid var(--contrast) 2px;
+  padding: 8px;
+  width:fit-content;
+}
+.minSysReqTitle{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.routerNavigator{
+  background-color: var(--first);
+}
+
+.App{
+  width: 100%;
+}
+
+.routerNavButton{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 12px 30px 5px 30px;
+  /* outline: 1px var(--contrast) solid; */
+}
+.routerNavButton:hover {
+  /* outline: 1px var(--contrast) solid; */
+  background-color: white;
+  opacity: 40%;
+  cursor:pointer;
+}
+
+.routerNavButton label{
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+}
+.routerNavButton :hover{
+  cursor:pointer;
+}
+
+.containerButton{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 3px 5px 3px 5px;
+  /* outline: 1px var(--contrast) solid; */
+  margin: 3px;
+}
+.containerButton:hover{
+  outline: 1px var(--contrast) solid; 
+}
+.containerButtonImage{
+  width: 20px;
+}
+
+.containerButtonNextBack{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 3px 5px 3px 5px;
+  outline: 1px var(--contrast) solid;
+  margin: 3px;
+}
+
+.pageCounter{
+  margin: 3px 20px 3px 20px;
+}
+
+.containerButtonNextBack:hover{
+  outline: 1px white solid;
+}
+
+.labelButton:hover{
+  outline: 1px var(--contrast) solid; 
+}
+
+.commentAuthorName{
+  padding: 5px;
+  margin: 10px;
+}
+.commentFont{
+  font-family: 'Press Start 2P', cursive;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  padding: 5px;
+  margin: 10px;
+  width: 70%;
+}
+.inlineDiv{
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+}
+.centeredDiv{
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  justify-items: center;
+}
+.searchbarHeightLimiterDiv{
+  display: flex;
+  height: 25px;
+  align-items: center;
+  align-content: center;
+}
+
+.strongLabel{
+  font-weight: 600;
+}
+
+.newsTitle{
+  font-size: 20px;
+  margin: 3px 10px 3px 10px;
+}
+.newsContent{
+  font-size: 14px;
+  margin: 3px 10px 3px 10px;
+}
+
+.width100{
+  width:100%
+}
+
+.gameTitle{
+  font-weight: 600;
+  font-size: 20px;
+  margin: 3px 0px 3px 0px;
+}
+.paragraphLittleMargin{
+  margin: 3px 0px 15px 0px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--second);;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
